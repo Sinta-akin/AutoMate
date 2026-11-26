@@ -9,6 +9,10 @@ abstract class AppConstants {
   static const String forgotPassword = '/forgot-password';
   static const String roleSelection = '/role-selection';
   static const String welcomeBack = '/welcome-back';
+  static const String devMenu = '/dev-menu';
+  static const String profile = '/profile';
+  static const String profilePhoto = '/profile-photo';
+  static const String documentUpload = '/document-upload';
 
   // MARK: - Asset paths
 

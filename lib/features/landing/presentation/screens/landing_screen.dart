@@ -45,8 +45,24 @@ class _LandingScreenState extends State<LandingScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const AppLogo(),
-                  SkipLink(
-                    onTap: () => Navigator.pushNamed(context, AppConstants.login),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        tooltip: 'Dev Menu',
+                        icon: const Icon(
+                          Icons.developer_mode,
+                          color: AppTheme.textSecondary,
+                          size: 20,
+                        ),
+                        onPressed: () =>
+                            Navigator.pushNamed(context, AppConstants.devMenu),
+                      ),
+                      SkipLink(
+                        onTap: () =>
+                            Navigator.pushNamed(context, AppConstants.login),
+                      ),
+                    ],
                   ),
                 ],
               ),

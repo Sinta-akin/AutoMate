@@ -6,6 +6,10 @@ import 'package:automate/features/auth/presentation/screens/forgot_password_scre
 import 'package:automate/features/auth/presentation/screens/role_selection_screen.dart';
 import 'package:automate/features/auth/presentation/screens/welcome_back_screen.dart';
 import 'package:automate/features/landing/presentation/screens/landing_screen.dart';
+import 'package:automate/features/dev/presentation/screens/dev_menu_screen.dart';
+import 'package:automate/features/profile/presentation/screens/profile_screen.dart';
+import 'package:automate/features/profile/presentation/screens/profile_photo_screen.dart';
+import 'package:automate/features/profile/presentation/screens/document_upload_screen.dart';
 import 'package:automate/core/constants/app_constants.dart';
 
 /// Application router using named routes.
@@ -45,6 +49,26 @@ class AppRouter {
       case AppConstants.welcomeBack:
         return MaterialPageRoute(
           builder: (_) => const WelcomeBackScreen(),
+          settings: settings,
+        );
+      case AppConstants.devMenu:
+        return MaterialPageRoute(
+          builder: (_) => const DevMenuScreen(),
+          settings: settings,
+        );
+      case AppConstants.profile:
+        return MaterialPageRoute(
+          builder: (_) => const ProfileScreen(),
+          settings: settings,
+        );
+      case AppConstants.profilePhoto:
+        return MaterialPageRoute(
+          builder: (_) => const ProfilePhotoScreen(),
+          settings: settings,
+        );
+      case AppConstants.documentUpload:
+        return MaterialPageRoute(
+          builder: (_) => const DocumentUploadScreen(),
           settings: settings,
         );
       default:
