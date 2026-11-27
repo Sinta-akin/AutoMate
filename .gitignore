@@ -46,4 +46,7 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
- DOCUMENT_UPLOAD_SUMMARY.md
+
+
+#Ai made documents
+DOCUMENT_UPLOAD_SUMMARY.md
