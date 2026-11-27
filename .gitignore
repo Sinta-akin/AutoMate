@@ -1,4 +1,5 @@
 # Miscellaneous
+
 *.class
 *.log
 *.pyc
@@ -11,6 +12,7 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
+
 
 # IntelliJ related
 *.iml
@@ -50,3 +52,6 @@ app.*.map.json
 
 #Ai made documents
 DOCUMENT_UPLOAD_SUMMARY.md
+
+#firebase
+lib/firebase_options.dart
