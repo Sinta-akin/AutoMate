@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
           _passwordController.text == AppConstants.simulatedPassword) {
         Navigator.pushNamedAndRemoveUntil(
           context,
-          AppConstants.welcomeBack,
+          AppConstants.dashboard,
           (route) => false,
         );
       } else {

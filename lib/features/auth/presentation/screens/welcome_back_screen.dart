@@ -28,8 +28,11 @@ class _WelcomeBackScreenState extends State<WelcomeBackScreen> {
     Future.delayed(const Duration(seconds: 1), () {
       if (!mounted) return;
       setState(() => _isLoading = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Logged in successfully')),
+      // Navigate to Owner Dashboard after successful login
+      Navigator.pushNamedAndRemoveUntil(
+        context,
+        AppConstants.dashboard,
+        (route) => false,
       );
     });
   }

@@ -10,6 +10,12 @@ abstract class AppConstants {
   static const String roleSelection = '/role-selection';
   static const String welcomeBack = '/welcome-back';
 
+  // Vehicle Rental feature routes
+  static const String dashboard = '/dashboard';
+  static const String myListings = '/my-listings';
+  static const String createListing = '/create-listing';
+  static const String editListing = '/edit-listing';
+
   // MARK: - Asset paths
 
   static const String logo = 'assets/images/logo.png';
