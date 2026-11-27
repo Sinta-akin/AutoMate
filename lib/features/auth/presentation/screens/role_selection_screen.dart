@@ -45,7 +45,7 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
     Future.delayed(const Duration(seconds: 1), () {
       if (!mounted) return;
       setState(() => _isLoading = false);
-      Navigator.pushReplacementNamed(context, AppConstants.landing);
+      Navigator.pushReplacementNamed(context, AppConstants.vehiclePreferences);
     });
   }
 
