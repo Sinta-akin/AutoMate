@@ -1,4 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:automate/features/preferences/presentation/screens/vehicle_questionnaire_screen.dart';
+import 'package:automate/features/preferences/presentation/screens/category_selection_screen.dart';
+import 'package:automate/features/vehicles/data/vehicle_data.dart';
+import 'package:automate/features/vehicles/domain/vehicle.dart';
+import 'package:automate/features/vehicles/presentation/screens/vehicle_details_screen.dart';import 'package:flutter/material.dart';
 import 'package:automate/features/auth/presentation/screens/login_screen.dart';
 import 'package:automate/features/auth/presentation/screens/register_screen.dart';
 import 'package:automate/features/auth/presentation/screens/email_verification_screen.dart';

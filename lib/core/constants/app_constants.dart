@@ -9,6 +9,9 @@ abstract class AppConstants {
   static const String forgotPassword = '/forgot-password';
   static const String roleSelection = '/role-selection';
   static const String welcomeBack = '/welcome-back';
+  static const String vehiclePreferences = '/vehicle-preferences';
+  static const String categorySelection = '/category-selection';
+  static const String vehicleDetails = '/vehicle-details';
 
   // MARK: - Asset paths
 
