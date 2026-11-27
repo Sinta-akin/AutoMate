@@ -1,0 +1,44 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+**/serviceAccount*.json
+**/*-firebase-adminsdk-*.json
+*.keystore
+*.jks
+key.properties
+
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-*
+android/.gradle/
+android/local.properties
+ios/Pods/
+ios/.symlinks/
+coverage/
+
+# Node
+node_modules/
+dist/
+.npm/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
