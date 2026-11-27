@@ -51,6 +51,23 @@ class AppRouter {
           builder: (_) => const WelcomeBackScreen(),
           settings: settings,
         );
+      case AppConstants.vehiclePreferences:
+        return MaterialPageRoute(
+          builder: (_) => const VehicleQuestionnaireScreen(),
+          settings: settings,
+        );
+      case AppConstants.categorySelection:
+        return MaterialPageRoute(
+          builder: (_) => const CategorySelectionScreen(),
+          settings: settings,
+        );
+      case AppConstants.vehicleDetails:
+        final args = settings.arguments;
+        final vehicle = args is Vehicle ? args : VehicleData.vehicles.first;
+        return MaterialPageRoute(
+          builder: (_) => VehicleDetailsScreen(vehicle: vehicle),
+          settings: settings,
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const LandingScreen(),
